@@ -1,0 +1,33 @@
+{
+  "name": "cypress-cucumber-pil",
+  "version": "1.0.0",
+  "description": "Test de cypress con Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MiguelD4w0/cypressCucumberPIL.git"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "test",
+    "pil"
+  ],
+  "author": "Darwoft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelD4w0/cypressCucumberPIL/issues"
+  },
+  "homepage": "https://github.com/MiguelD4w0/cypressCucumberPIL#readme",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.6",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.3.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/step_definitions/*.js"
+  }
+}
