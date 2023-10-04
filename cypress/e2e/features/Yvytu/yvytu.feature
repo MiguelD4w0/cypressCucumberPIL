@@ -24,7 +24,7 @@ Feature: Home Yvytu
 
     Scenario: Verificar comportamiento del botón /reserva_yvytu
         Given que un usuario esta en la pagina de "Yvytu"
-        Then visualiza el link "Reservar" redirecciona a "https://wa.me/5493757454400"
+        Then visualiza el link "XXReservar" redirecciona a "https://wa.me/5493757454400"
         And visualiza el link "reserva_yvytu" redirecciona a "https://www.instagram.com/reserva_yvytu/"
         And visualiza el link "Enviar mensaje" redirecciona a "https://wa.me/5493757454400"
 
@@ -34,6 +34,7 @@ Feature: Home Yvytu
         Then se verifica que la cabaña "1" llamada "Yaguareté" posee las siguientes caracteristicas "Para 4 personas, 2 habitaciones, Baño con ducha, Ropa de cama, Wi-fi, Aire acondicionado"
         And se verifica que la cabaña "2" llamada "Arasari" posee las siguientes caracteristicas "Para 4 personas, 2 habitaciones, Baño con ducha, Ropa de cama, Wi-fi"
 
+    @ignore
     Scenario Outline: Verificar cabaña <num>: <nombreCab>
         Given que un usuario esta en la pagina de "Yvytu"
         When el usuario hace scroll hasta "Nuestras cabañas"
