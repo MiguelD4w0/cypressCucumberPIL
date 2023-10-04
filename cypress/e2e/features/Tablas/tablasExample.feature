@@ -36,7 +36,7 @@ Feature: Ejemplo de Uso de Tablas
             | tech     | uso            |
             | cypress  | e2e, servicios |
             | selenium | varios         |
-    @focus
+    
     Scenario: Ejemplo de uso de flat en 1
         Then leo la siguienta tabla con raw en 1 y aplico flat
             | tech     | uso            |
