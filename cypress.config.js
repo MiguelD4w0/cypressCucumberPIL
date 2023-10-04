@@ -7,8 +7,13 @@ const createEsbuildPlugin =
 module.exports = defineConfig({
   env:{
     TAGS: "not @ignore",
+    //Configuración de las URLs
     YVYTU_URL: "https://vientosdelaselva.com.ar/",
-    EDEN_URL: "https://www.edenentradas.com.ar/", 
+    EDEN_URL: "https://www.edenentradas.com.ar/",
+    CLARO_URL: "https://tienda.claro.com.ar/",
+    DEXTER_URL: "https://www.dexter.com.ar/",
+    STORE_URL: "https://automationteststore.com/",
+    //Configuración de los usuarios 
   },
   e2e: {
     specPattern: "cypress/e2e/features/**/*.feature",
