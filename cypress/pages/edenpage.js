@@ -27,6 +27,10 @@ class Eden {
     return cy.get('tbody [class="col-12"]');
   }
 
+  getEventUbicacion() {
+    return cy.get('tbody [class="col-12"]');
+  }
+
 }
 
 module.exports = new Eden();

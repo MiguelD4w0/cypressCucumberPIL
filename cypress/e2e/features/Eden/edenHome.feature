@@ -18,9 +18,21 @@ Feature: Test de la pagina de Eden
             | mes    | febrero           |
             | hora   | 14:00             |
 
-    @focus
+
     Scenario: Verficar los precios de 1 cuartetos
         Given que un usuario esta en la pagina de "Eden"
         When presiona el boton del header "CUARTETOS"
         And presiona el boton Ver de "El Loco Amato"
         Then el precio que se visualiza tiene el formato correcto
+
+    Scenario: Verificar precio usando Intercept
+        Given que un usuario esta en la pagina de "Eden"
+        When presiona el boton del header "CUARTETOS"
+        And presiona el boton Ver de "2"
+        Then el precio que se visualiza tiene el formato correcto validado con la respuesta del intercept
+    @focus
+    Scenario: Verificar precio usando llamada al servicio
+        Given que un usuario esta en la pagina de "Eden"
+        When presiona el boton del header "CUARTETOS"
+        And presiona el boton Ver de "1"
+        Then el precio que se visualiza tiene el formato correcto validado con el servicio
