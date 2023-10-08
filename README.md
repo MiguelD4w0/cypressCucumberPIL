@@ -17,6 +17,7 @@ releases/tag/v19.0.0
 - Se repite varias veces una acción, volver atrás (investigar) y cy.reload()
 - HiperLibertad: Ventanas tipoPopUp
 - Comportamineto de mobile a veces es diferente
+- Probando clonacion
 
 ## Flags de Configuración
 
