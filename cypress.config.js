@@ -13,6 +13,7 @@ module.exports = defineConfig({
     CLARO_URL: "https://tienda.claro.com.ar/",
     DEXTER_URL: "https://www.dexter.com.ar/",
     STORE_URL: "https://automationteststore.com/",
+    CINEMARK_URL: "https://www.cinemarkhoyts.com.ar/",
     //Configuración de los usuarios 
   },
   e2e: {
